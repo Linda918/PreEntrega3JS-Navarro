@@ -1,0 +1,135 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000000;
+    background-color: #ffffff;
+    background-image: url(../img/fondo.jpg);
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Barra de navegación */
+.navbar {
+    padding: 2rem;
+    background-color: #ffffff;
+}
+
+.navbar-collapse{
+    align-items: center;
+    justify-content: space-between;
+}
+
+.inicio{
+    display: flex;
+    justify-content: center;
+}
+
+.bienvenida{
+    text-align: center;
+    font-size: 40px;
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+}
+
+.compra{
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+
+/* Contacto */
+.contenedor {
+    margin: 10px;
+    padding: 0;
+    margin-bottom: 80px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    overflow: visible;
+}
+
+.contenedor h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.contenedor .cuadrado {
+    margin: 0;
+    padding: 0;
+    background-color: #ffd900;
+    border: solid #000000;
+}
+
+.contenedor .datos {
+    margin: 20px;
+    padding: 0;
+    font-size: 18px;
+}
+
+.btn-danger{
+    margin: 20px;
+    font-weight: bold;
+}
+  
+@media screen and (max-width: 480px) {
+    .contenedor {
+      overflow: hidden;
+    }
+    .contenedor .cuadrado {
+      border: dashed white;
+    }
+    .contenedor .datos {
+      font-size: 16px;
+    }
+}
+
+/* Pie de página*/
+
+footer {
+    min-height: 500 px;
+    background-color: #ff0000;
+    margin-top: 20px;
+}
+
+.footer-texto{
+    font-size: 1rem;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.iconos-redes-sociales a {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    margin: 10px;
+    margin-top: 30px;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    transition: all 0.2s ease-in;
+}
+
+.iconos-redes-sociales i{
+    color: #ffffff;
+    font-size: 1.5rem;
+    transition: all 0.2s ease-in;
+}
+
+.iconos-redes-sociales a:hover{
+    background-color: #ffffff;
+    border: 2px solid #0059ff;
+}
+
+.iconos-redes-sociales a:hover i{
+    color: #000000;
+}
